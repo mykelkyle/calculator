@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+    </style>
   </head>
   <body>
+    <h1>CALCULATOR</h1>
     <div class="grid-container">
       <!-- DISPLAY -->
       <div class="grid-display">
-        <div class="previous" data-previous>50 + 50</div>
+        <div class="previous" data-previous></div>
         <div class="current" data-current></div>
       </div>
       <!-- BUTTONS -->
-      <div class="grid-item" data-all-clear>AC</div>
-      <div class="grid-item" data-clear>C</div>
+      <div id="grid-all-clear" class="grid-item" data-all-clear>AC</div>
+      <div id="grid-clear" class="grid-item" data-clear>C</div>
       <div class="grid-item" data-operation>%</div>
       <div class="grid-item" data-operation>÷</div>
       <div class="grid-item" data-number>7</div>
@@ -33,8 +37,9 @@
       <div class="grid-item" data-operation>x</div>
       <div class="grid-item" data-number>0</div>
       <div class="grid-item" data-number>.</div>
-      <div class="grid-item grid-equal" data-equal>=</div>
+      <div id="grid-equal" class="grid-item grid-equal" data-equal>=</div>
     </div>
+    <div class="footer">Created by Mykel Murphy</div>
     <script src="script.js"></script>
   </body>
 </html>

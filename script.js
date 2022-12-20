@@ -31,31 +31,36 @@ operationButtons.forEach((button) => {
     values.push(button.textContent);
     previousDisplay.textContent = `${values[0]} ${values[1]}`;
     console.log(values);
+    currentDisplay.textContent = "";
   });
 });
 
 equalsButton.addEventListener("click", () => {
-  values.pop();
-  values.push(currentDisplay.textContent);
-  console.log(values);
-  previousDisplay.textContent = `${values[0]} ${values[1]} ${values[2]}`;
-  let intValues = [];
-  for (let i = 0; i < values.length; i++) {
-    if (i == 1) {
-      intValues.push(values[i]);
-    } else {
-      intValues.push(parseInt(values[i]));
+  if (values.length == 3) {
+    values.pop();
+    values.push(currentDisplay.textContent);
+    console.log(values);
+    previousDisplay.textContent = `${values[0]} ${values[1]} ${values[2]}`;
+    let intValues = [];
+    for (let i = 0; i < values.length; i++) {
+      if (i == 1) {
+        intValues.push(values[i]);
+      } else {
+        intValues.push(parseInt(values[i]));
+      }
     }
-  }
 
-  console.log(intValues);
-  let result = operate(intValues);
-  currentDisplay.textContent = result;
+    console.log(intValues);
+    let result = operate(intValues);
+    currentDisplay.textContent = result;
+    values = [];
+  }
 });
 
 allClearButton.addEventListener("click", () => {
+  currentValue = "";
   previousDisplay.textContent = "";
-  currentDisplay.textContent = 0;
+  currentDisplay.textContent = "";
   values = [];
 });
 
