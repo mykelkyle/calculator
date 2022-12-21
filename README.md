@@ -12,6 +12,10 @@ Some challenges I faced
 - "Stringing together" multiple operations (e.g. 12 + 7 - 5 x 3 = 42)
 - Juggling a previous and current display and figuring out a way to store operators/operands flexibly
 
+---
+
+What I learned
+
 I initially thought to store the data within an array and pop()/push() whenever new numbers or operators were accessed. This (somewhat) worked up until the point where I needed to "string together" multiple operations - which is when I realized this method was unsustainable. Things may have worked, but it required the gross overuse of extra code.
 
 Then I decided to start over and refactor since things were becoming extremely messy anyways. The solution I came up with next was utilizing global variables for the operands/operator and adding more functions to keep things from becoming too involved.
