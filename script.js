@@ -108,7 +108,7 @@ function evaluate() {
     operate(currentOperation, firstOperand, secondOperand)
   );
   if (result.toString().length > 12) {
-    currentDisplay.textContent = "ERRROR";
+    currentDisplay.textContent = "ERROR";
   } else {
     currentDisplay.textContent = result;
   }
