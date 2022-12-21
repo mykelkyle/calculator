@@ -52,7 +52,10 @@ function appendDecimal() {
   if (shouldResetScreen) {
     eraseScreen();
   }
-  if (currentDisplay.textContent === "ERROR") {
+  if (
+    currentDisplay.textContent === "ERROR" ||
+    currentDisplay.textContent.includes(".")
+  ) {
     return;
   }
   if (currentDisplay.textContent === "") {
