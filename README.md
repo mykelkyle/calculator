@@ -28,7 +28,9 @@ backSpace: deletes 1 character from currentDisplay
 
 eraseScreen: a simple reset of the currentDisplay without clearing global variables
 
-or separating a single array of 3 values into three different global values -
+or
+
+separating a single array of 3 values into three different global values -
 
 {num1, operator, num2}
 -->
