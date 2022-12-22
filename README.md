@@ -41,3 +41,5 @@ let currentOperation = null;
 Much simpler and cleaner to maintain.
 
 Overall, I learned that stricter demarcation of function roles and variables helps greatly in terms of scalability.
+
+Looking back, I can see that my commit messages were vague and sparse. In the future, I will commit more frequently and specifically. In addition, I will use more semantic HTML, like using button tags instead of divs for the calculator numberpad.
